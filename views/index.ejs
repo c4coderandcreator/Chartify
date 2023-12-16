@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chartify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="uniq">
+    <h1 class="headhere">Chartify</h1>
+  <form action="/chart" method="post">
+    <label for="chartType">Type of Chart:</label>
+    <input type="text" id="chartType" name="chartType" required>
+
+    <label for="year">Year:</label>
+    <input type="text" id="year" name="year" required>
+
+    <label for="salary">That Year's Data</label>
+    <input type="text" id="yod" name="yod" required>
+
+    <button type="submit">Submit</button>
+  </form>
+  <section class="lastpara">
+    <h4> Usage Instruction</h4>
+    <h6>1. Type of chart accepted :  "bar" "pie" and "line" <br>
+        2. year should be in numbers separted by comma (,) :  Ex: 2000,2010,2111...<br>
+        3. Year's Data is the data you want store for that year :  Ex: 7000,800,1900...<br>
+        4. After filling the form press submit and press back button to generate new chart <br>
+    </h6>
+  </section>
+  <footer class="foot">Made with ❤️ by coderandcreator</footer>
+</div>
+
+</body>
+</html>

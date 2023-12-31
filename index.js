@@ -17,7 +17,7 @@ app.post('/chart', async (req, res) => {
     const { chartType, year, yod } = req.body;
   
     // Create the Chart.js URL
-    const chartUrl = `https://quickchart.io/chart?c={type:'${chartType}',data:{labels:[${year}],datasets:[{label:'Users',data:[${yod}]}]}}`;
+    const chartUrl = `https://quickchart.io/chart?c={type:'${chartType.trim().toLowerCase()}',data:{labels:[${year.trim()}],datasets:[{label:'Users',data:[${yod.trim()}]}]}}`;
     console.log(chartUrl);
   
     // Fetch the modified URL

@@ -1,5 +1,5 @@
 # Chartify
-coverts real time data to charts (bar,pie,line).
+coverts numeric real time data to charts (bar,pie,line).
 
 # Tech Stack
 - Html
